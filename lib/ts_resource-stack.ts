@@ -13,11 +13,6 @@ export class TsResourceStack extends cdk.Stack {
           removalPolicy: cdk.RemovalPolicy.DESTROY
     });
 
-    //Create an L2 construct for S3 Bucket that retain on stack destroy
-    const bucket2 = new Bucket(this, "XXXXXXXXXXXXXX", {
-          versioned: true,
-          removalPolicy: cdk.RemovalPolicy.RETAIN
-    });
   }
 }
 
